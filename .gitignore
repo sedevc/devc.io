@@ -25,5 +25,5 @@ Thumbs.db
 *.lib
 *.sbr
 obj/
-static/
+static/pic/
 
