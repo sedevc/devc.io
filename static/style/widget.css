@@ -1,0 +1,79 @@
+#twitter_logo {							/*Egenskaper twitter logo*/
+	border-radius: 50px;				/*Med samma radius som width och height blir diven rund*/
+    position:fixed;
+    width:50px;
+    height:50px;
+	background-color: #2E3133;
+    left:8px;
+    top:100px;
+}
+#tlogo{
+	padding-left: 2px;
+	height: 45px;
+	width: 45px;
+}
+#mail_logo {							/*Egenskaper mail logo*/
+	border-radius: 50px;
+    position:fixed;
+    width:50px;
+    height:50px;
+	background-color: #2E3133;
+    left:8px;
+    top:170px;
+}
+#mlogo{
+	padding: 7px;
+	height: 35px;
+	width: 35px;
+}
+#git_logo {								/*Egenskaper github logo*/
+	border-radius: 50px;
+    position:fixed;
+    width:50px;
+    height:50px;
+	background-color: #2E3133;
+    left:8px;
+    top:240px;
+}
+#glogo{
+	padding: 0px;
+	height: 50px;
+	width: 50px;
+}
+#curiosities{							/*Egenskaper kuriosa diven*/
+	display: none;
+	position: fixed;
+	width: 200px;
+	right: 35px;
+	top: 100px;
+}
+#cur_top{
+	width: 100%;
+	height: 30px;
+}
+#cur_top_left{
+font-style: italic;
+font-size:23px;
+padding: 2px 13px 0 5px;
+border-radius: 7px 7px 0 0;
+width: 40%;
+height: 100%;
+color:white;
+background: #2E3133;
+}
+#cur_top_right{
+width: 50%;
+height: 100%;
+}
+#cur_bottom{
+	color: white;
+	font-size: 13px;
+	border-radius: 0 7px 7px 7px;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+	background-color: #2E3133;
+}
+#har{
+	cursor:pointer;						/*Ändra muspekaren till en hand*/
+}

@@ -1,0 +1,52 @@
+html{
+}
+pre{
+	font-size: 11px;
+}
+body{
+
+	font-family: 'Roboto Slab', serif;					/*Roboto som standard font*/
+	font-weight: 300;
+    color: black;							/*Svart text som standard*/
+	margin: 0;
+	padding: 0;
+}
+p{ 	
+	padding: 5px;							
+	font-size: 13px;						/*Standard storlek på font i p taggar*/
+	font-weight: 300;
+}
+h1 {
+    font-weight: 100;
+	display: inline;
+	font-size: 30px;
+	color: white;
+	background-color: #2E3133;
+}
+a{ 									
+	text-decoration: none;					/*Länkar ska inte vara understrukna*/
+	color: white;
+}
+header{ 									/*header och navigation*/
+	position: fixed; 						/*Ska inte följa med när man skrollar*/
+	left: 0px;								/*Absolut position i förhållande till vänster kant*/
+	top: 0px;								/*Absolut position i förhållande till översta kanten*/
+	padding: 0;
+	margin: 0;
+	padding-left: 40px;
+	height: 40px;
+	width: 100%;
+	background-color: #2E3133;
+	box-shadow: -5px 3px 15px;				/*Skuggan på nav bar*/
+}
+h2{
+    font-weight: 300;
+	margin: 10px;
+}
+h3{
+    font-weight: 300;
+	display: inline;
+	font-size: 20px;
+	color: white;
+	background-color: #2E3133;
+}

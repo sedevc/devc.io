@@ -1,0 +1,53 @@
+
+#topDomainName{							/*DEVC:IO*/
+	color: #51AABC;
+	font-size: 25px;
+	padding: 4px;
+	margin: 0;
+}
+#top a:link, a:visited, a:active{
+	
+	text-decoration: none;
+}
+#top a:hover{
+	color: #51AABC; 					/*Ändra färg när pekaren är över*/
+}
+ #top{
+	list-style: none;
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#top li{
+	padding: 10px;
+	float: left; 						/*li tagarna ska ligga efter varandra*/
+}
+.topleft{
+	color:white;
+	height: 40px;
+	width: 12%;
+	float: left;
+}
+#bg_table{
+	margin-top: 5px;
+	font-size: 12px;
+	float: right;
+}
+.topcenter{
+	height: 40px;
+	width: 70%;
+	float: left;
+}
+.onoff{
+	font-size: 12px;
+	background-color: #2E3133;
+	border:0px;
+	outline: none;						/*Ingen blå  ram runt vid highlight*/
+}
+.onoff:hover{
+	cursor:pointer;						/*Ändra muspekaren till en hand*/
+}
+.onoff:active{
+	background-color: #2E3133;
+}
