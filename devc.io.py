@@ -1,4 +1,4 @@
-from flask import Flask, url_for, render_template
+from flask import Flask, url_for, render_template, request
 
 app = Flask(__name__)
 
@@ -19,9 +19,12 @@ def cv():
 def contact():
     return render_template('tpl.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('tpl.html')
+    if request.method == 'POST':
+        return render_template('tpl.html')
+    else:
+        return render_template('tpl.html')
 
 
 if __name__ == '__main__':

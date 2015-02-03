@@ -24,6 +24,7 @@ Thumbs.db
 [Dd]ebug*/
 *.lib
 *.sbr
+config.py
 obj/
 static/pic/
 
