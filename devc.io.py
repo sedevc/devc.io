@@ -4,15 +4,6 @@ from flask import Flask, url_for, render_template, request
 app = Flask(__name__)
 
 
-@app.route('/new', methods=['GET', 'POST'])
-def new():
-    if request.method == 'POST':
-            todo = Todo(request.form['title'], request.form['text'])
-            db.session.add(todo)
-            db.session.commit()
-            return redirect(url_for('index'))
-    return render_template('new.html')
-
 @app.route('/')
 def index():
     return render_template('tpl.html')
