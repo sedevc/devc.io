@@ -1,4 +1,4 @@
-from flask import Flask, url_for, render_template, request
+from flask import Flask, abort, url_for, render_template, request
 
 
 app = Flask(__name__)
@@ -22,6 +22,7 @@ def contact():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    abort(401)
     if request.method == 'POST':
         return render_template('tpl.html')
     else:
