@@ -1,66 +1,12 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>DEVC.IO</title>
-        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/mainpage.css') }}">
-        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/std_tag.css') }}">
-        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/nav.css') }}">
-        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/prism.css') }}">
-        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/widget.css') }}">
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400' rel='stylesheet' type='text/css'>
+{% extends "base.html" %}
+{% block content %}
+<div class="center">
+<h1>{{ pagename }} </h1>
+    <div class="aboutcontent">
+        <div>
 
-		<script src="{{ url_for('static',filename='js/background.js') }}" type="text/javascript">
-		</script>
-	</head>
-	
-	<body onload="checkBgState()">
-		<script src="{{ url_for('static',filename='js/prism.js') }}"></script>
-		<div id="background">
-		<img id="ch_bg" src="#" class="stretch" alt="bg"/>
-		</div>
-		<header>
-			<div class="topleft">
-				<a href="/"><h3 id="topDomainName">DEVC:IO</h3></a>
-			</div>
-			<div class="topcenter">
-				<ul id="top">
-					<li><a href="/">START</a></li>
-					<li><a href="about">OM</a></li>
-					<li><a href="cv">CV</a></li>
-					<li><a href="contact">KONTAKT</a></li>
-					<li><a href="http://github.com/sedevc" target="_blank">GITHUB</a></li>
-					<li><a href="login">LOGIN</a></li>
-				</ul>
-			</div>
-			<div class="topleft">
-				<table id="bg_table">
-					<tr>
-						<td><b>BAKGRUND:</b></td>
-						<td><button class="onoff" type="button" onclick="bgOn()"><span id="on">ON</span></button></td>
-						<td><button class="onoff" type="button" onclick="bgOff()"><span id="off">OFF</span></button></td>
-					</tr>
-				</table>
-			</div>
-		</header>
-        <div class="center">
-		<h1>Om </h1>
-			<div class="aboutcontent">
-				<div>
+        </div>
+    </div>
 
-				</div>
-			</div>
-
-	    </div>
-
-
-
-
-
-	<div id="twitter_logo"><a href="https://twitter.com/sedevc" target="_blank"><img id="tlogo" src="{{ url_for('static',filename='pic/twitter.png') }}" alt="Twitter"></a></div>
-	<div id="mail_logo"><a href="mailto:info@devc.io"><img id="mlogo" src="{{ url_for('static',filename='pic/mail.png') }}" alt="Mail"></a></div>
-	<div id="git_logo"><a href="http://www.github.com/sedevc" target="_blank"><img id="glogo" src="{{ url_for('static',filename='pic/github.png') }}" alt="Github"></a></div>
-
-	
-	</body>
-</html>
+</div>
+{% endblock %}
