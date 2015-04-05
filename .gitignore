@@ -26,5 +26,5 @@ Thumbs.db
 *.sbr
 config.py
 obj/
-static/pic/
+#static/pic/
 
